@@ -117,3 +117,120 @@
   117  cat ~/week1/ex1.txt
   118  history > ex2.txt
   119  history > ~/week1/ex2.txt
+  120  cat ~/week1/ex2.txt
+  121  date
+  122  sleep 3
+  123  quit
+  124  q
+  125  find "ex3.sh" ./*
+  126  find "ex3.sh"
+  127  find "ex3.sh" ~/*
+  128  pwd
+  129  find "ex3.sh"
+  130  ls
+  131  find "ex3.sh" ./*
+  132  cd week1
+  133  ls
+  134  cd week1
+  135  ls
+  136  ls -a
+  137  update
+  138  vi ex1.txt
+  139  ls
+  140  cd week1
+  141  ls
+  142  vi ex1.txt
+  143  vi ex3.sh
+  144  ls
+  145  touch ex3.sh
+  146  cat > ex3.sh
+  147  echo > ex3.sh
+  148  ls
+  149  gedit ex3.sh
+  150  sudo apt install gedit
+  151  --fix-missing
+  152  gedit ex3.sh
+  153  sudo apt-get install gedit
+  154  sudo apt-get update
+  155  gedit ex3.sh
+  156  sudo apt-get install gedit
+  157  gedit ex3.sh
+  158  echo > ex3.sh
+  159  touch ex3.sh
+  160  pwd
+  161  ls
+  162  touch ex3.txt
+  163  vi ex3.txt
+  164  mv ex3.txt ex3.sh
+  165  ls
+  166  rm ex3.txt; touch ex3.sh
+  167  ls
+  168  rm ex3.sh
+  169  touch ex3.sh
+  170  cat ex3.sh
+  171  ls -a
+  172  ls -A
+  173  vi ex3.sh
+  174  sudo rm ex3.sh
+  175  ls
+  176  ls -la
+  177  touch ex3.sh
+  178  cat ex3.sh
+  179  sudo ls
+  180  chmod -s ex3.sh
+  181  ls
+  182  explorer.exe
+  183  touch ex3.sh
+  184  ls
+  185  chmod
+  186  chmod ex3.sh
+  187  chmod --help ex3.sh
+  188  vi ex3.sh
+  189  sh ex3.sh
+  190  cd /bin/sleep
+  191  cd ~/bin/sleep
+  192  cd ..
+  193  ls
+  194  cd /bin/sleep
+  195  cd ./bin/sleep
+  196  cd ./bin/
+  197  ls
+  198  cd sleep/
+  199  cd sleep
+  200  sudo cd sleep
+  201  sudo cd /sleep
+  202  sleep
+  203  sleep 3
+  204  sudo sleep
+  205  sudo sleep 3
+  206  sudo mv /bin/sleep /bin/sleep~; touch /bin/sleep ; chmod +x /bin/sleep
+  207  sudo touch /bin/sleep ; chmod +x /bin/sleep
+  208  vi ex3.sh
+  209  cd ..
+  210  ls
+  211  cd ./home/enestydarealmc
+  212  cd week1
+  213  ls
+  214  vi ex3.sh
+  215  sh ex3.sh
+  216  sudo sleep 3
+  217  sleep 3
+  218  cd ~
+  219  ls
+  220  gedit ~/week1/main.c
+  221  cd week1
+  222  touch main.c
+  223  ls
+  224  vi main.c
+  225  gcc main.c -o ex4
+  226  ./ex4
+  227  ls
+  228  cd week1
+  229  ls
+  230  cd ~/usr/bin
+  231  cd /usr/bin
+  232  ls
+  233  ls | sort -r | gred "gcc" > /home/enestydarealmc/week1/ex1.txt
+  234  ls | sort -r | grep "gcc" > /home/enestydarealmc/week1/ex1.txt
+  235  vi /home/enestydarealmc/week1/ex1.txt
+  236  history > ~/week1/ex2.txt
