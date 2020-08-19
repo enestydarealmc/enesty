@@ -1,0 +1,119 @@
+    1  $ssh -X t.nguyen@osc-[N].edu.innopolis.ru
+    2  $ssh  t.nguyen@osc-[N].edu.innopolis.ru
+    3  $ssh t.nguyen@osc-[N].edu.innopolis.ru
+    4  whoami
+    5  hostname
+    6  man whoami
+    7  man man
+    8  less
+    9  ls
+   10  status
+   11  ls
+   12  cd ~
+   13  q
+   14  quit
+   15  sudo ls
+   16  cd "This PC"
+   17  cd C
+   18  cd c
+   19  ls -
+   20  ls-
+   21  ls
+   22  man ;ls
+   23  man ls
+   24  ls-a
+   25  ls -a
+   26  man ls
+   27  ls -all
+   28  ls -A
+   29  cd "C\"
+   30  ls
+   31  q
+   32  ls
+   33  ls -all
+   34  q
+   35  quit
+   36  man ls
+   37  cd ..
+   38  cd..
+   39  cd ..
+   40  cd~
+   41  cd ~
+   42  cd home/c
+   43  cd home/C
+   44  cd home/C:/
+   45  cd home/C:
+   46  ls
+   47  ls -a
+   48  cd home
+   49  cd /home
+   50  ls
+   51  ls -a
+   52  cd /home/enestydarealmc
+   53  ls
+   54  ls -a
+   55  ls .
+   56  cd /home
+   57  pw
+   58  pwd
+   59  cd /Users/enestydarealmc
+   60  pwd
+   61  cd /home/enestydarealmc
+   62  pwd
+   63  ls
+   64  ls -la
+   65  cd ~/
+   66  ls -la
+   67  cd ~/home
+   68  cd /home
+   69  ls
+   70  ls -la
+   71  cd ~/
+   72  mkdir test
+   73  cd test
+   74  cd ..
+   75  cd te
+   76  cd tes
+   77  cd test
+   78  pwd
+   79  cd ..
+   80  pwd
+   81  cd ..
+   82  pwd
+   83  ls -la
+   84  cd test
+   85  cd /home/test
+   86  cd /home/enestydarealmc/test
+   87  info mkdir
+   88  man mkdir
+   89  mkdir -p foo/bar/1/2
+   90  ls
+   91  ls foo/
+   92  ls foo
+   93  ls foo/bar/1/2/
+   94  mkdir -p foo/bar/1/2/3
+   95  ls foo/bar/1/2/
+   96  cd ~
+   97  mkdir ~/week1
+   98  sudo apt install gcc
+   99  ls
+  100  cd ~/week1
+  101  cd /usr/bin
+  102  ls "gcc"
+  103  ls
+  104  ls grep "gcc"
+  105  pwd
+  106  ls grep "gcc" /usr/bin
+  107  grep "gcc" /usr/bin
+  108  grep "gcc" ls /usr/bin
+  109  ls "gcc" /usr/bin
+  110  ls "gcc" /usr/bin | sort -r
+  111  ls &  "gcc" /usr/bin | sort -r
+  112  find /usr/bin/ -name "*gcc*"
+  113  find -r  /usr/bin/ -name "*gcc*"
+  114  find /usr/bin/ -name "*gcc*" | sort -r
+  115  ls "gcc" /usr/bin/* | sort -r
+  116  ls "gcc" /usr/bin/* | sort -r > ~/week1/ex1.txt
+  117  cat ~/week1/ex1.txt
+  118  history > ex2.txt
+  119  history > ~/week1/ex2.txt
