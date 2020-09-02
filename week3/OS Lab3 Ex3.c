@@ -24,27 +24,55 @@ void print_list() {
 	}
 	printf("\n");
 }
-void insert_node(int elem) {
+void insert_node(int elem, int pos) {
 	struct node*p = ll.head;
 	if(p==NULL) {
+		if(pos!=0){
+			printf("Position exceeds length of the list!\n");
+			return;
+		}
 		struct node* temp = malloc(sizeof(struct node));
 		temp->value = elem;
 		temp->next = NULL;
 		ll.head = temp;
 		return;
 	}
-	while(p->next != NULL)
+	int i =0;
+	while(p->next != NULL&&i<pos)
+	{
 		p = p->next;
+		i++;
+	}
+	if(i<pos){
+		printf("Position exceeds length of the list!\n");
+		return;
+	}
 	struct node* temp = malloc(sizeof(struct node));
 	temp->value = elem;
-	temp->next = NULL;
+	temp->next = p->next;
 	p->next = temp;
+}
+void insert_node_last(int elem) {
+		struct node*p = ll.head;
+		if(p==NULL) {
+			struct node* temp = malloc(sizeof(struct node));
+			temp->value = elem;
+			temp->next = NULL;
+			ll.head = temp;
+			return;
+		}
+		while(p->next != NULL)
+			p = p->next;
+		struct node* temp = malloc(sizeof(struct node));
+		temp->value = elem;
+		temp->next = NULL;
+		p->next = temp;
 }
 void delete_node(int pos) {
 	struct node*p = ll.head;
 	int i = 0;
 	if(ll.head == NULL) {
-		printf("The list is empty!");		
+		printf("The list is empty!\n");		
 		return;
 	} else {
 		if(pos ==0) {
@@ -57,7 +85,7 @@ void delete_node(int pos) {
 			i++;
 		}
 		if(i < pos-1) {
-			printf("Postition exceeds length of the list");
+			printf("Postition exceeds length of the list!\n");
 			return;
 		} else {
 			struct node* temp = p->next;
@@ -70,19 +98,23 @@ void delete_node(int pos) {
 int main() {
 	ll.head = NULL;
 	print_list(ll);
-	insert_node(10);
-	insert_node(11);
-	insert_node(12);
+	insert_node_last(10);
+	insert_node_last(11);
+	insert_node(12,1);
 	print_list(ll);
 	delete_node(1);
 	print_list(ll);
-	insert_node(13);
+	insert_node_last(13);
 	print_list(ll);
 	delete_node(2);
 	print_list(ll);
 	delete_node(0);
 	print_list(ll);
 	delete_node(0);
+	print_list(ll);
+	insert_node_last(1);
+	insert_node(2,0);
+	insert_node(3,0);
 	print_list(ll);
 	return 0;
 }
