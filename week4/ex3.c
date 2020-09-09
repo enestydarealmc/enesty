@@ -4,7 +4,7 @@
 int main(){
 	printf("Input your command: ");
 	char cmd[1000];
-	scanf("%s",cmd);
+	gets(cmd);
 	for(int i = 0 ; i < strlen(cmd); i++){
 		if(cmd[i] == ' ' || cmd[i] == ';')
 		{

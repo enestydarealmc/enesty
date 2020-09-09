@@ -4,7 +4,7 @@
 int main(){
 	char cmd[1000];
 	printf("Input your command: ");
-	scanf("%s",cmd);
+	gets(cmd);
 	system(strcat(cmd," &"));
 	return 0;
 }
