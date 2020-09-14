@@ -13,4 +13,5 @@ int main(void){
 	}
 	return 0;
 }
-//Out put will be random sequence of hello's from parent and chil, because the CPU randomly excecute them.
+//Out put will be random sequence of hello's from parent and chil, because the CPU randomly excecute them
+//there was some change//.
