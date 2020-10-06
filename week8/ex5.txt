@@ -1,0 +1,7 @@
+Physical Address: The address residing in Main Memory (RAM)
+Virtual Address: An intermediate address created by the OS according to Virtual Memory scheme.
+
+Virtual Memory scheme: Sometimes the processes running in RAM fill up its space, and we need some more memory. Of course we can just buy a new ram, but that's an expensive solution. Instead, we can utilize
+the secondary memory and give the user the impression that some magical memory has just been allocated from paradise. Some part of secondary memory is used to add up to the RAM, together making up the 
+virtual memory (larger in size than the RAM per se). Whenever some part of the process is idle, simply the ram is full, we can swap it out to the secondary memory, swap in the needed part, later swap it back 
+if necessary and still keep everything running on time.

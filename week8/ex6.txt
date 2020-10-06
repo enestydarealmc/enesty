@@ -1,0 +1,5 @@
+For 16-bit virtual address, a 16-bit memory address can point to 2^16 physical page frames. This is also the size of the physical address space.
+Each page size is 8kB (2^13 bit)
+
+Each page is mapped from an entry in the table:
+=> The number of entries needed = The number of pages in physical memory = 2^16 / 2^13 = 2^3 = 8
