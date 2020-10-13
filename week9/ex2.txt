@@ -1,0 +1,52 @@
+For 5 frames and 30 references:
+	A possible string: 7 3 5 5 1 4 6 5 2 5 3 3 1 3 7 3 6 2 7 3 3 6 5 1 4 2 6 7 1 6
+	With hit/miss: 13/17
+	There are 7 different number -> The min miss achievable is 7	
+
+
+	1  - 4
+	2  - 3
+	3  - 7
+	4  - 2
+	5  - 5
+	6  - 5
+	7  - 4
+
+
+Now, to increase the hit/miss ratio:
+	We can continuously feed identical numbers, repeatedly with all numbers
+
+	Thus:
+	A proposed string: 1 1 1 1 2 2 2 3 3 3 3 3 3 3 4 4 5 5 5 5 5 6 6 6 6 6 7 7 7 7
+	With hit/miss: 23/7
+
+In order to decrease the hit/miss ratio:
+	We can first feed the system with 5 different numbers, then feed the maximum amount of numbers different from those 5 numbers: 
+	(the priority is the number with highest repetitions left)
+	(bullet point indicated the next slot to be replaced)
+	
+		.1 2 3 4 5 and then 6 7 -> 
+		6 7 .3 4 5 and then 1 3 2 ->
+		.6 7 1 3 2 and then 5 4 ->
+		5 4 .1 3 2 and then 6 7 ->
+		5 4 6 7 .2 and then 3 1 ->
+		1 .4 6 7 3 and then 5 2 ->
+		1 5 2 .7 3 and then 6 ->
+		1 5 2 6 .3 and then 7 3 ->
+		3 .5 2 6 7 and then 1 ->
+		3 1 .2 6 7 and then 5 ->
+		3 1 5 .6 7 and from now on we only have 3,5,6,7 left of this mount:	
+					1  - 0
+					2  - 0
+					3  - 3
+					4  - 0
+					5  - 1
+					6  - 2
+					7  - 1
+		which anyhow are already in the frames, all of them later will be hit.
+
+
+	The resulted string: 1 2 3 4 5 6 7 1 3 2 5 4 6 7 3 1 5 2 6 7 3 1 5 3 3 3 5 6 6 7
+	Which yiels hit/miss ratio: 7/23
+
+	
