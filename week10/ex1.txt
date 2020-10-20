@@ -1,0 +1,7 @@
+total 8
+40067 drwxr-xr-x  2 enestydarealmc enestydarealmc 4096 Oct 20 12:54 .
+  665 drwxr-xr-x 10 enestydarealmc enestydarealmc 4096 Oct 20 12:51 ..
+40103 -rw-r--r--  3 enestydarealmc enestydarealmc    0 Oct 20 12:52 _ex1.txt
+40103 -rw-r--r--  3 enestydarealmc enestydarealmc    0 Oct 20 12:52 _ex1_1.txt
+40103 -rw-r--r--  3 enestydarealmc enestydarealmc    0 Oct 20 12:52 _ex1_2.txt
+40112 -rw-r--r--  1 enestydarealmc enestydarealmc    0 Oct 20 12:54 ex1.txt
