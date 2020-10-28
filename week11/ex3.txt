@@ -1,0 +1,12 @@
+We notice that the default buffer mode of Linux is line buffer, which means it only outputs data when it 
+encounters new line or is full
+
+In the first program, the string "Hello" did not fill up the buffer, nor did it contain new line character,
+so of course it has not been printed out yet.
+Then we fork the process, right after which the new line character is printed, causing the 2 buffers (parent 
+and child processes') to be flushed, so we get two "Hello\n" strings printed consecutively.
+
+In the second one, firstly we print "Hello\n", which consists of new line character therefore get printed
+right away.
+Then we fork, with the two buffers (of child and parent processes) being empty. After that the two buffers
+receive a "\n" for each and print them out immediately. Finally we get Hello string above two new lines. 
