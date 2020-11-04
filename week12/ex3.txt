@@ -1,0 +1,25 @@
+A.For the case when O_SYNC is disabled:
+1. When linux buffer size is 1 byte:
+real    0m0.013s
+user    0m0.000s
+sys     0m0.005s
+2. When linux buffer size is 1024 bytes:
+real    0m0.001s
+user    0m0.001s
+sys     0m0.000s
+
+In the first case the time is much bigger compared to the second one simply because the lesser buffer size, the more read and write system
+calls it takes to copy the testfile.ico
+
+B>For the case when O_SYNC is enabled"
+1. When linux buffer size is 1 byte:
+real    0m6.078s
+user    0m0.000s
+sys     0m0.272s
+2. When linux buffer size is 1024 bytes:
+real    0m0.019s
+user    0m0.001s
+sys     0m0.000s
+
+Compared to when O_SYNC is turned off, this is much slower. It is because O_SYNC makes sure that both the content of the file being copied
+and its metadata is in the disk, only then it returns, which makes both the I/O time and kernel cpu time much bigger.
