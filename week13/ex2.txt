@@ -1,0 +1,21 @@
+There are three ways to deal with deadlocks:
+1. Recovery
+
+This one is favored in cases where deadlock rate is much lower than hardware/software bugs, therefore trading performance for avoidance and prevention is unnecessary.
+
+2. Avoidance
+
+Basically if we know in advance the maximum number of instances of each resource a process might need, we can carefully choose whether to allocate or not whenever a process demands as a way of avoidance.
+But this is impossible due to the fact that many processes only know how many instances of resources to ask for on the go, and thus we would be asking for something from future.
+
+3. Prevention
+
+This method acts in favor of us only when our system satisfies some conditions:
+
+a. If we have abundant amount of disk space, we can spool eveything to avoid mutual exclusion.
+b. If all processes knows which to ask for, we can tell them to request for all of them initially thus jeopardize the
+hold and wait condition.
+c. As for no preemtion, we can just ... take the resource away, of course only in the case where no damage made to
+the resource after doing so.
+d. Circular wait can be dodged by numerating all resource and only allowing a process to call them in increasing
+order. Doing so is extremely complex as the number of resources increase and sometimes is just impossible.
